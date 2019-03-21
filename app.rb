@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  'Hello'
+  redirect '/login'
+end
+
+get '/login' do
+  erb :login
 end

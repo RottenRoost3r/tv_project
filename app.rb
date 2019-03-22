@@ -7,3 +7,7 @@ end
 get '/login' do
   erb :login
 end
+
+get '/main' do
+  erb :main
+end

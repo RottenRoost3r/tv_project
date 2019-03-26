@@ -1,11 +1,16 @@
 require 'sinatra'
 
 get '/' do
-  redirect '/login'
+  erb :login
 end
 
-get '/login' do
-  erb :login
+post '/login' do
+  pass = params[:password]
+  if pass == "risingsun"
+    redirect "/main"
+  else
+    redirect "/"
+  end
 end
 
 get '/main' do

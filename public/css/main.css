@@ -1,0 +1,11 @@
+.video {
+    margin: 200px;
+  border: 1px transparent rgba(0, 0, 0, 0);
+}
+
+body {
+    background-image: url("/images/night-sky-hd-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}

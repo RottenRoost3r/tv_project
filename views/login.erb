@@ -14,9 +14,16 @@
   
 </html>
     <form method="post" action="/login">
-    <div class="imput">
-        <input type=password name=password id=password>
-        <button>GO</button>
+        <div class="imput">
+            <input type=password name=password id=password>
+            <button id="sound">GO</button>
         </div>
     </form>
 </body>
+
+
+<script>
+    var button = document.getElementById("sound");
+    var nani = new Audio("/sound/nani.mp3");
+    button.addEventListener("click", nani.play())
+</script>
